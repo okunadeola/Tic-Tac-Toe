@@ -1,150 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tic.css">
     <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: rgb(224, 204, 220)
-
-            
-        }
-        
-        .divbox{
-            width: 100px;
-            height: 100px;
-            font-size: 50px;
-            border: 3px solid teal;
-            text-align: center;
-            align-items: center;
-            padding-top: 20px;
-            box-sizing: border-box;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            
-        }
-        .container{
-            display: none;
-            width: 300px;
-            flex-wrap: wrap;
-            justify-content: center;
-            position: fixed;
-            top: 43%;
-            left: 28%;
-            transform: translate(50%);
-            box-shadow: 0px 0px 5px 5px rgb(47, 70, 70);
-        }
-        #result{
-            font-size: xx-large;
-            text-align: center;
-            padding: 3px 5px;
-            background-color: antiquewhite;
-            display: inline-block;
-            justify-content: center;
-            margin-left: 45%;
-            border: 2px solid teal;
-            border-radius: 10px;
-        }
-        #restart{
-            margin: 10px 20px;
-        }
-        #input, #control    {
-             margin: 10px  20px;
-        }
-        span{
-            color: rgb(12, 94, 114);
-            background-color: burlywood;
-            padding: 1px 10px;
-           
-        }
-        #score{
-            border: 3px solid palevioletred;
-            display: inline-block;
-            margin: 10px  20px;
-            min-width: 200px;
-            padding: 0px 0px;
-            background-color: thistle;
-        }
-        .gameName{
-            display: inline-block;
-            margin-left: 15%;
-            font-size: 4rem;
-            color: rgb(244, 220, 245);
-
-        }
-        #player1, #player2{
-            margin-right: 10px;
-            min-width: 20px;
-            position: fixed;
-            display: inline-block;
-            padding-left: 5px;
-            word-wrap: break-word;
-            
-        
-        }
-        #scone, #sctwo{
-            margin-left: 100px;
-        }
-        #startG{
-            display: inline-block;
-            margin-right: 10px;
-        }
-        #drawer{
-            background-color: teal;
-            padding: 20px;
-            border-radius: 0px 0px 40px 40px;
-            border: 3px dashed thistle;
-        }
-        button{
-            outline: none;
-            border-radius: 4px;
-        }
-        button:focus{
-            box-shadow: 0px 0px 7px 4px rgb(223, 221, 221);
-        }
-    </style>
 </head>
+
 <body>
     <div id="drawer">
         <div id="input">
             <input id="firstP" type="text" placeholder="Enter player 1 name" maxlength="10">
-            <input id="secondP"  type="text" placeholder="Enter player 2 name" maxlength="10">
+            <input id="secondP" type="text" placeholder="Enter player 2 name" maxlength="10">
         </div>
         <div id="control">
-            <button id="startG" onclick="startGame()">Start Game</button><button id="endG" onclick="endGame()">End Game</button>
+            <button id="startG" onclick="startGame()">Start Game</button><button id="endG" onclick="endGame()">End
+                Game</button>
         </div>
         <div id="score">
-            <div style="text-align: center; margin-bottom: 10px; background-color: rgb(165, 42, 93); padding: 2px 50px;color: cornsilk;">Score Card</div>
+            <div
+                style="text-align: center; margin-bottom: 10px; background-color: rgb(165, 42, 93); padding: 2px 50px;color: cornsilk;">
+                Score Card</div>
             <label id="player1">Player 1</label>
             <span id="scone">0</span><br>
-    
+
             <label id="player2">Player 2</label>
             <span id="sctwo">0</span>
-        </div> <div class="gameName">- Tic Tac Toe -</div> <br>
+        </div>
+        <div class="gameName">- Tic Tac Toe -</div> <br>
         <button id="restart" onclick="restartGame()">restart</button>
     </div>
-    
-    
-    <div id="result"></div>
-    
-    <div class="container" id="container">
-        <div class="divbox"  id="one" onclick="myFunc(event)"></div>
-        <div class="divbox" id="two" onclick="myFunc(event)"></div>
-        <div class="divbox" id="three" onclick="myFunc(event)"></div>
-        <div class="divbox" id="four" onclick="myFunc(event)"></div>
-        <div class="divbox" id="five" onclick="myFunc(event)"></div>
-        <div class="divbox" id="six" onclick="myFunc(event)"></div>
-        <div class="divbox" id="seven" onclick="myFunc(event)"></div>
-        <div class="divbox" id="eight" onclick="myFunc(event)"></div>
-        <div class="divbox" id="nine" onclick="myFunc(event)"></div>
-    </div>
-    
-    <!-- <div class="one">insert players name to play the game</div> -->
 
+
+    <div id="result"></div>
+
+    <div class="container" id="container">
+        <button class="divbox" id="one" onclick="myFunc(event)"></button>
+        <button class="divbox" id="two" onclick="myFunc(event)"></button>
+        <button class="divbox" id="three" onclick="myFunc(event)"></button>
+        <button class="divbox" id="four" onclick="myFunc(event)"></button>
+        <button class="divbox" id="five" onclick="myFunc(event)"></button>
+        <button class="divbox" id="six" onclick="myFunc(event)"></button>
+        <button class="divbox" id="seven" onclick="myFunc(event)"></button>
+        <button class="divbox" id="eight" onclick="myFunc(event)"></button>
+        <button class="divbox" id="nine" onclick="myFunc(event)"></button>
+    </div>
     <script src="tic.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,106 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("bd9.jpg");
+    background-color: rgb(224, 204, 220);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+    /* filter: saturate(90%); */
+    
+}
+
+.divbox{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: 3px solid teal;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.container{
+    display: none;
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 43%;
+    left: 28%;
+    transform: translate(50%);
+    box-shadow: 0px 0px 5px 5px rgb(47, 70, 70);
+}
+#result{
+    font-size: xx-large;
+    text-align: center;
+    padding: 3px 5px;
+    background-color: antiquewhite;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 45%;
+    border: 2px solid teal;
+    border-radius: 10px;
+}
+#restart{
+    margin: 10px 20px;
+}
+#input, #control    {
+      margin: 10px  20px;
+}
+span{
+    color: rgb(12, 94, 114);
+    background-color: burlywood;
+    padding: 1px 10px;
+    
+}
+#score{
+    border: 3px solid palevioletred;
+    display: inline-block;
+    margin: 10px  20px;
+    min-width: 200px;
+    padding: 0px 0px;
+    background-color: thistle;
+}
+.gameName{
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 4rem;
+    color: rgb(244, 220, 245);
+
+}
+#player1, #player2{
+    margin-right: 10px;
+    min-width: 20px;
+    position: fixed;
+    display: inline-block;
+    padding-left: 5px;
+    word-wrap: break-word;
+    
+
+}
+#scone, #sctwo{
+    margin-left: 100px;
+}
+#startG{
+    display: inline-block;
+    margin-right: 10px;
+}
+#drawer{
+    background-color: teal;
+    padding: 20px;
+    border-radius: 0px 0px 40px 40px;
+    border: 3px dashed thistle;
+}
+button{
+    outline: none;
+    border-radius: 4px;
+}
+button:focus{
+    box-shadow: 0px 0px 7px 4px rgb(223, 221, 221);
+}
